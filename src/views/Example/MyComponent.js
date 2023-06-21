@@ -19,6 +19,11 @@ class MyComponent extends React.Component {
         })
     }
 
+    handlerClickButton = () => {
+        console.log('hit the button')
+        alert('click me')
+    }
+
     render() {
         return (
             <>
@@ -30,6 +35,9 @@ class MyComponent extends React.Component {
                 </div>
                 <div className="second">
                     My Username: {this.state['username']}
+                </div>
+                <div className="third">
+                    <button onClick={() => this.handlerClickButton()}>Click me</button>
                 </div>
             </>
 
