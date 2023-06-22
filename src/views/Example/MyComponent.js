@@ -4,7 +4,7 @@ class MyComponent extends React.Component {
 
     //key:value
     state = {
-        name: 'Hung',
+        name: '',
         username: 'lamhungw'
     }
 
@@ -14,17 +14,19 @@ class MyComponent extends React.Component {
     */
 
     handlerOnChangeName = (event) => {
+        // this.state.name = event.target.value; //bad code
+        // console.log(event.target.value, 'event target: ', event.target, 'event object:', event)
         this.setState({
-            name: event.target.value
+            name: event.target.value,
         })
     }
 
     handlerClickButton = () => {
-        console.log('hit the button')
         alert('click me')
     }
 
     render() {
+        console.log('>>> call render: ', this.state)
         return (
             <>
                 <div className="first">
@@ -40,7 +42,6 @@ class MyComponent extends React.Component {
                     <button onClick={() => this.handlerClickButton()}>Click me</button>
                 </div>
             </>
-
         )
     }
 
