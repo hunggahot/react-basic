@@ -11,19 +11,19 @@ class FormComponent extends React.Component {
             {
                 id: 'abcJob1',
                 title: 'Developers',
-                salary: '500$'
+                salary: 500
             },
 
             {
                 id: 'abcJob2',
                 title: 'Testers',
-                salary: '400$'
+                salary: 400
             },
 
             {
                 id: 'abcJob3',
                 title: 'Project Managers',
-                salary: '1000$'
+                salary: 1000
             },
         ]
     }
