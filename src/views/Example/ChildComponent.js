@@ -29,7 +29,7 @@ class ChildComponent extends React.Component {
 
         return (
             <>
-                {showJobs === false ?
+                {showJobs === true ?
                     <div>
                         <button className="btn-show"
                             onClick={() => this.handleShowHide()}>
